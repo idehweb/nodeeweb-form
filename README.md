@@ -1,11 +1,8 @@
-# [Nodeeweb Shop | How to create online shop with nodejs reactjs mongodb](https://idehweb.com/product/creare-website-or-application-with-nodeeweb/)
+# [Nodeeweb Form | Form Plugin For Nodeeweb](https://idehweb.com/product/creare-website-or-application-with-nodeeweb/)
 
 The plugin add form functionality to your nodeeweb core.
 
-You can create and online shop, website or application, handle products, orders, transactions with this plugin.
-
-Here we are creating an example of usage
-
+You can create forms and manage their entries with this plugin.
 
 ## Table of contents
 
