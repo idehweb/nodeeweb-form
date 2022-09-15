@@ -1,11 +1,8 @@
-# [Nodeeweb Shop | How to create online shop with nodejs reactjs mongodb](https://idehweb.com/product/creare-website-or-application-with-nodeeweb/)
+# [Nodeeweb Form | Form Plugin For Nodeeweb](https://idehweb.com/product/creare-website-or-application-with-nodeeweb/)
 
-The plugin add shop functionality to your nodeeweb core.
+The plugin add form functionality to your nodeeweb core.
 
-You can create and online shop, website or application, handle products, orders, transactions with this plugin.
-
-Here we are creating an example of usage
-
+You can create forms and manage their entries with this plugin.
 
 ## Table of contents
 
@@ -21,22 +18,30 @@ Here we are creating an example of usage
 
 ### 1. install using command
 ```bash
-# If you use npm:
-npm install @nodeeweb/shop
-
-# Or if you use Yarn:
-yarn add @nodeeweb/shop
+npm install @nodeeweb/form
+```
+or
+```bash
+yarn add @nodeeweb/form
 ```
 
 ### 2. use it in your server function like below:
 (you imported Server function from @nodeeweb/server)
 ```jsx static
 import Server from '@nodeeweb/server'
-import Shop from '@nodeeweb/shop'
-Server({entity:[...Shop]});
+import Shop from '@nodeeweb/form'
+Server({entity:[...Form]});
+```
+### 3. start your mongoDB server:
+```bash
+sudo systemctl start mongod
+```
+### 4. check if the server is up and running:
+```bash
+sudo systemctl status mongod
 ```
 
-### 3. now your shop is ready, just type command:
+### 5. now your shop is ready, just type command:
 ```bash
 # If you use npm:
 npm start
@@ -44,13 +49,21 @@ npm start
 # Or if you use Yarn:
 yarn start
 ```
+
 ### 3. after that .env.local will be created
+=======
+or
+```bash
+node index.mjs
+```
+### 6. after that .env.local will be created
 
 after you start server for first time, .env.local will be created, you can change configurations in it and restart server
 
 ## Documentation
 
 Check the getting started guide here: [Documentation]
+
 
 
 ## API
@@ -146,6 +159,8 @@ These routes have been added to your server after installing shop:
     DELETE   /admin/transaction/:id
 </details>
 
+
+=======
 
 ## presets , examples , demo
 
