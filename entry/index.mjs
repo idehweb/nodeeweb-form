@@ -1,28 +1,30 @@
+
 import model from './model.mjs'
 import routes from './routes.mjs'
 
 export default {
-    "name": "discount",
+    "name": "entry",
     "model": model,
-    "modelName": "Discount",
+    "modelName": "Entry",
     "routes": routes,
     "admin": {
         "list": {
-            "header": [{"name": "thumbnail", "type": "image"}, {
-                "name": "title",
-                "type": "object",
-                "key": "fa"
-            }, {"name": "category"}, {"name": "createdAt"}, {"name": "updatedAt"}]
+            "header": [
+                {"name":"trackingCode","type":"string"},
+                {"name":"form","type":"reference","reference":"Form"},
+                {"name": "updatedAt","type":"date"},
+                {"name": "actions","type":"actions","edit":true,"delete":true},
+
+            ]
         },
         "create": {
             "fields": [{"name": "title", "type": "string"},]
         },
         "edit": {
             "fields": [
-                {"name": "name", "type": "string"},
-                {"name": "slug", "type": "string"},
-                {"name": "count", "type": "string"},
-                {"name": "price", "type": "string"},
+                {"name": "statusCode", "type": "string"},
+                {"name": "amount", "type": "string"},
+                {"name": "Authority", "type": "string"},
                 {"name": "createdAt", "type": "date"},
                 {"name": "updatedAt", "type": "date"},
             ]
